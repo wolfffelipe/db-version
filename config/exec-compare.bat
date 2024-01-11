@@ -1,14 +1,20 @@
 @echo off
-rem exec-script.bat
+rem exec-compare.bat
+
+echo Database:
+echo		- Servidor: %SERVER% 
+echo		- Banco: %DATABASE% 
+echo		- Usuario: %USERNAME%
+echo.
+
+echo Database de referencia:
+echo		- Servidor: %SERVER_REF% 
+echo		- Banco: %DATABASE_REF% 
+echo		- Usuario: %USERNAME_REF%
+echo.
 
 echo Verificando scripts...
 echo.
-
-rem Definir o caminho da pasta de scripts SQL
-set SCRIPT_FOLDER=.\scripts
-
-rem Obter o caminho completo para log.bat
-set LOG_SCRIPT=%~dp0\log.bat
 
 echo Executando scripts:
 
